@@ -30,6 +30,6 @@ I know, I know..  This script isn't very "pro Youtube" but before you send me ye
 #TODO
 * Automate the upload so it doesn't require any user input.  Currently Oauth is handled inside of the browser and this sucks.
 * Ensure all ID3 data is properly copied over.
-* Scrap all CSS.
+* Scrap all CSS and mark up, replacing it w/ nice STDOut outputs..  
 * Ensure it runs pleasantly as a cron job.
 * Ensure debug mode does everything it sais it will.
