@@ -33,3 +33,4 @@ I know, I know..  This script isn't very "pro Youtube" but before you send me ye
 * Scrap all CSS and mark up, replacing it w/ nice STDOut outputs..  
 * Ensure it runs pleasantly as a cron job.
 * Ensure debug mode does everything it sais it will.
+* Provide an "On successful upload" callback function for doing stuff like writing to databases.
