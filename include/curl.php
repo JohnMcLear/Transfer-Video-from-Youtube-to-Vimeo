@@ -151,18 +151,14 @@ class Curl {
 function getPage($url,$post = false,$cookie = false)
 {
     $pURL = parse_url($url);    
-       
     $curl = new Curl($pURL['host']);
-                    
     if (strstr($url,'https://')) 
     {
         $curl->secure = true;	
     }
-    
     if ($post) {
     	return $curl->post($url,$post);
     } else {
         return $curl->get($url);
     }
-    
 }

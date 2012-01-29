@@ -1,3 +1,4 @@
+<?php
 // A curl function
 function get_data($url)
 {
@@ -10,4 +11,4 @@ function get_data($url)
   curl_close($ch);
   return $data;
 }
-
+?>
