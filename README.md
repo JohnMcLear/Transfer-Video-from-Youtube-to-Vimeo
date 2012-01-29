@@ -13,10 +13,11 @@ Do not use this tool for replicating copywritten material.  This tool is designe
 I know, I know..  This script isn't very "pro Youtube" but before you send me yet another email complaining please research my commitments to developing the open-web and online interopability.
 
 #GETTING STARTED
-<ul>
 * Register for a Vimeo consumer and secret key at Vimeo.com..   Wait for your keys..
 * Download this Tool.  Open up config.php
 * Insert your vimeo keys and youtube username.
+* Test by running index.php (php index.php)
+* Once you are happy, change debug to false in config.php and add a cron job if you like
 
 #PRE-REQS
 * Php5+
