@@ -13,7 +13,7 @@ Do not use this tool for replicating copywritten material.  This tool is designe
 I know, I know..  This script isn't very "pro Youtube" but before you send me yet another email complaining please research my commitments to developing the open-web and online interopability.
 
 #GETTING STARTED
-* Register for a Vimeo consumer and secret key at Vimeo.com..   Wait for your keys..
+* (Register for a Vimeo consumer and secret key at Vimeo.com)[http://vimeo.com/api/applications/new]..   Wait for your keys..
 * Download this Tool.  Open up config.php
 * Insert your vimeo keys and youtube username.
 * Test by running index.php (php index.php)
