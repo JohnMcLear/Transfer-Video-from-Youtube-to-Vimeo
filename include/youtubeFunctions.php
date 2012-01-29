@@ -86,19 +86,18 @@ function get_youtube_video($metadata, $test_only)
         {
         echo "<br/>WARNING: Get of $filename failed!";
         }
-
-      echo "\n<div class='uploadbutton' id='$id'><a onClick='\$(\"#$id\").html(\"Wait...\");$.get(\"vimeo/authenticate.php\", {f$
+      echo "\n<div class='uploadbutton' id='$id'><a onClick='\$(\"#$id\").html(\"Wait...\");$.get(\"vimeo/authenticate.php\", {file: \"$filepath\", title: \"$metadata[0]\", description: \"$metadata[1]\"}, function(data){\$(\"#$id\").html(data);});return false;' href=\"vimeo/authenticate.php?file=$filepath&title=$metadata[0]&description=$metadata[1]\">Upload me</a><br/><br/></div>";
     }
   else
     {
-      echo "\n<div class='uploadbutton' id='$id'><a onClick='\$(\"#$id\").html(\"Wait...\");$.get(\"vimeo/authenticate.php\", {f$
+      echo "\n<div class='uploadbutton' id='$id'><a onClick='\$(\"#$id\").html(\"Wait...\");$.get(\"vimeo/authenticate.php\", {file: \"$filepath\", title: \"$metadata[0]\", description: \"$metadata[1]\"}, function(data){\$(\"#$id\").html(data);});return false;' href=\"vimeo/authenticate.php?file=$filepath&title=$metadata[0]&description=$metadata[1]\">File already exists!  Woohoo!  Upload me</a><br/><br/></div>";
     }
   }
   else
   {
     echo "Test mode currently enabled, file upload not supported";
   }
-echo "</div>\n";
+  echo "</div>\n";
 }
 
 
