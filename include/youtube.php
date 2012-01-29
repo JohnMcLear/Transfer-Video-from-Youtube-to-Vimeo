@@ -30,16 +30,13 @@
 
 
 class youtube {
-    
     var $conn = false;
     var $username = "";
     var $password = "";
     var $error = false;
-          
     function get($url)
     {
         $this->conn = new Curl('youtube');
-        
         $html = $this->conn->get($url);
 
         if(strstr($html,'verify-age-thumb'))
@@ -95,12 +92,9 @@ class youtube {
         foreach ($formats as $format => $meta) {
             if (isset($foundArray[$format])) {
                 $videos[] = array('ext' => $meta[0], 'type' => $meta[1], 'url' => $foundArray[$format]);
-            } 
+            }
         }
 
         return $videos;
-
-        
     }
-    
 }
