@@ -47,7 +47,7 @@ class youtube {
 
         if(strstr($html,'das_captcha'))
         {
-            $this->error = "Captcah Found please run on diffrent server";
+            $this->error = "Captcha Found please run on diffrent server";
             return false;
         }
 
